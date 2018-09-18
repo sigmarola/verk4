@@ -14,6 +14,6 @@ def jsonFile():
 @route('/api')
 def index2():
     with urllib.request.urlopen("https://apis.is/currency") as url:
-        data = json.loads(url.read().decode())
-    return template("index.tpl", gogn=data,title='API')
+        skra = json.loads(url.read().decode())
+    return template("index.tpl", gogn=skra,title='API')
 bottle.run(host='0.0.0.0', port=argv[1])
