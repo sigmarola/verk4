@@ -1,5 +1,6 @@
 from bottle import *
 import urllib.request, json
+from sys import argv
 
 
 
@@ -14,4 +15,4 @@ def index2():
     with urllib.request.urlopen("https://apis.is/currency") as url:
         data = json.loads(url.read().decode())
     return template("index.tpl", gogn=data,title='API')
-run(debug=True)
+bottle.run(host='0.0.0.0'port=argv=[1])
