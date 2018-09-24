@@ -11,20 +11,15 @@
     <a href='/json'>JSON</a>
 % end
 
+<table>
 % for i in gogn['results']:
-    <table>
 	    <tr>
 	        <th>{{i['longName']}}</th>
+	        <th>{{i['shortName']}}</td>
+	        <td>{{i['value']}}</td>
 	    </tr>
-	    <tr>
-	        <td>
-	            <span>{{i['shortName']}}</span>
-	            <span>{{i['value']}}</span>
-	        </td>
-	    </tr>
-	</table>
-	<hr>
 % end
+</table>
 </body>
 </html>
 <style>
