@@ -3,6 +3,7 @@
 <html>
 <head>
 <h1>{{title}}</h1>
+<link rel="stylesheet" type="text/css" href="static/styles.css">
 </head>
 <body>
 % if pge == True:
@@ -22,13 +23,3 @@
 </table>
 </body>
 </html>
-<style>
-table, th, td {
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: left;
-    border-style: solid;
-}
-</style>
