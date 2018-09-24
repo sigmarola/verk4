@@ -18,4 +18,7 @@ def index2():
     with urllib.request.urlopen("https://apis.is/currency") as url:
         skra = json.loads(url.read().decode())
     return template("index.tpl", gogn=skra,title='API',pge=False)
+@route('/static/<skra>')
+def static_skra(skra):
+    return static_file(skra, root='./public')
 bottle.run(host='0.0.0.0', port=argv[1])
