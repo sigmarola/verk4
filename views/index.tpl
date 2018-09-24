@@ -29,8 +29,6 @@ table, th, td {
 th, td {
     padding: 5px;
     text-align: left;
-}
-span {
-    padding-right: 2em;
+    border-style: solid;
 }
 </style>
