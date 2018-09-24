@@ -11,7 +11,7 @@
 % else:
     <a href='/json'>JSON</a>
 % end
-
+<hr>
 <table>
 % for i in gogn['results']:
 	    <tr>
