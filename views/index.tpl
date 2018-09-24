@@ -15,8 +15,8 @@
 <table>
 % for i in gogn['results']:
 	    <tr>
-	        <th>{{i['longName']}}</th>
-	        <th>{{i['shortName']}}</td>
+	        <th>{{i['shortName']}}</th>
+	        <th>{{i['longName']}}</td>
 	        <td>{{i['value']}}</td>
 	    </tr>
 % end
